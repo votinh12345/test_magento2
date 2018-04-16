@@ -1,0 +1,17 @@
+.field{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.field .label{
+    width: 10%;
+    float: left;
+    display: inline-block;
+}
+.field .control{
+    width: 70%;
+    display: inline-block;
+}
+.field.submit{
+    text-align: center;
+}

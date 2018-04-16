@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <event name="email_order_set_template_vars_before">
+        <observer name="add_Custom_variable_to_Order" instance="Hiennv\Sales\Observer\ObserverforOrderSender" />
+    </event>
+</config>

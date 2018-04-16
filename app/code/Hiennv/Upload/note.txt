@@ -1,0 +1,4 @@
+- show images with page csm
+
+ + Content->Pages->Add New Page->Content
+    add content : {{block class="Hiennv\Upload\Block\Images\ListImages" template="Hiennv_Upload::list_images.phtml"}}

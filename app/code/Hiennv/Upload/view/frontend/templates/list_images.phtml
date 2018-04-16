@@ -1,0 +1,32 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+$imagesCollection = $block->getImagesCollection();
+
+?>
+<style>
+    .images{
+        width: 400px;
+        height:auto;
+        display: inline-block;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .images img{
+        max-width: 100%;
+    }
+</style>
+<?php if($imagesCollection->count() > 0) :?>
+    <div class="list-images">
+    <h2>List Images</h2>
+    <?php foreach ($imagesCollection as $images): ?>
+        <div class="images">
+            <a href="<?php echo $images->getClickUrl() ?>" target="<?php echo $images->getTargetValue() ?>" >
+                <img alt="<?php echo $images->getImageAlt() ?>" src="<?php echo $block->getBannerImageUrl($images) ?>"/>
+            </a>
+        </div>
+    <?php endforeach ?>
+    </div>
+<?php endif;?>

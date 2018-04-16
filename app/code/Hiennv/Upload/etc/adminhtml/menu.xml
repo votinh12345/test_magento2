@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="Hiennv_Upload::images" title="Images" module="Hiennv_Upload" sortOrder="60" resource="Hiennv_Upload::images"/>
+        <add id="Hiennv_Upload::images_banners" title="Manage images" module="Hiennv_Upload" sortOrder="10" parent="Hiennv_Upload::images" action="images/images" resource="Hiennv_Upload::images"/>
+    </menu>
+</config>
